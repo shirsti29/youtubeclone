@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> YouTube </title>
+</head>
+<link rel="stylesheet" href="styles .css" />
+
+<body>
+  <nav class="nav"> <!--flex-->
+    <div class="top-left">
+
+      <label for="check"> <!--in this side bar changing into 3 slashes -->
+
+        <img src="./svg/horizental line.svg " class="hamburger-icon" /></label>
+
+      <img src="./image/youtube-logo-removebg-preview.png" class="youtubeimg" />
+    </div>
+
+
+    <div class="top-mid">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="search-icon">
+        <img src="./svg/search.svg" alt="" class="search-icon-img" />
+      </div>
+    </div>
+
+
+    <div class="top-right">
+      <img src="./svg/videocall.svg" class="videocall" />
+      <img src="./svg/bell.svg" class="bell-icon" />
+      <img src="./image/unnamed pic.png" class="account-img" />
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="side-bar-new">
+      <div class="side-bar-content">
+
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+          width="24" focusable="false" aria-hidden="true" style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            ">
+          <g>
+            <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z" fill="white" />
+          </g>
+        </svg>
+        <p>Home</p>
+      </div>
+
+      <div class="side-bar-content">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+          aria-hidden="true" style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            ">
+          <path
+            d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+            fill="white" />
+          <p>Shorts</p>
+        </svg>
+      </div>
+
+      <div class="side-bar-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" id="subscription">
+          <path fill="white" fill-rule="evenodd"
+            d="M1.5 9A1.5 1.5 0 0 1 3 7.5h18A1.5 1.5 0 0 1 22.5 9v11a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 20V9ZM3 8.5a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h18a.5.5 0 0 0 .5-.5V9a.5.5 0 0 0-.5-.5H3Z"
+            clip-rule="evenodd"></path>
+          <path fill="white" fill-rule="evenodd"
+            d="M9.77 10.556a.5.5 0 0 1 .517.034l5 3.5a.5.5 0 0 1 0 .82l-5 3.5A.5.5 0 0 1 9.5 18v-7a.5.5 0 0 1 .27-.444zm.73 1.404v5.08l3.628-2.54-3.628-2.54zM20 6H4V5h16v1zm-2-2.5H6v-1h12v1z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <p>Subscription</p>
+      </div>
+
+      <div class="side-bar-content">
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+          width="24" focusable="false" aria-hidden="true" style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            ">
+          <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z" fill="white" />
+        </svg>
+        <p>You</p>
+      </div>
+    </div>
+
+
+
+    <input style="z-index: 8000; display: none;" type="checkbox" id="check">
+    <!--this is for hamburger to shift to right when hover-->
+
+    <div class="side-bar">
+      <div class="first-img-bar">
+        <div class="home s-opt">
+          <img src="./svg/home.svg" alt="" />
+          <span>Home</span>
+        </div>
+
+
+        <div class="Shorts s-opt">
+          <img src="./svg/shorts.svg" alt="" />
+          <span>Shorts</span>
+        </div>
+
+
+        <div class="Subscription s-opt">
+          <img src="./svg/subscription.svg" alt="" />
+          <span>Subscription</span>
+        </div>
+      </div>
+
+
+      <div class="second-img-bar">
+        <h3>You</h3>
+        <div class="History s-opt">
+          <img src="./svg/History.svg" alt="" />
+          <span>History</span>
+        </div>
+
+
+        <div class="Playlist s-opt">
+          <img src="./svg/list.svg" alt="" />
+          <span>Playlist</span>
+        </div>
+
+
+        <div class="watch-later s-opt">
+          <img src="./svg/watch-latter.svg" alt="" />
+          <span>Watch later</span>
+        </div>
+
+
+        <div class="liked s-opt">
+          <img src="./svg/liked.svg" alt="" />
+          <span>Liked</span>
+        </div>
+      </div>
+
+
+      <div class="third-img-bar">
+        <h3>Subscription</h3>
+
+
+        <div class="sub1 s-opt">
+          <img src="./image/unnamed pic.png" alt="" />
+          <span>Shirsti</span>
+        </div>
+
+
+        <div class="sub2 s-opt">
+          <img src="./image/channels4_profile.jpg" alt="" />
+          <span>Himanshi P</span>
+        </div>
+
+
+        <div class="all-subscription s-opt">
+          <img src="./svg/All subscription.svg" alt="" />
+          <span>All Subscription</span>
+        </div>
+      </div>
+
+
+      <div class="fourth-img-bar">
+        <h3>Explore</h3>
+        <div class="trending s-opt">
+          <img src="./svg/trending.svg" alt="" />
+          <span>Trending</span>
+        </div>
+
+
+        <div class="shoping s-opt">
+          <img src="./svg/shoping.svg" />
+          <span>Shopping</span>
+        </div>
+
+
+        <div class="music s-opt">
+          <img src="./svg/music.svg" alt="" />
+          <span>Music</span>
+        </div>
+
+
+        <div class="movie s-opt">
+          <img src="./svg/movie.svg" alt="" />
+          <span>Movie</span>
+        </div>
+
+
+        <div class="live s-opt">
+          <img src="./svg/live.svg" alt="" />
+          <span>Live</span>
+        </div>
+
+
+        <div class="game s-opt">
+          <img src="./svg/game.svg" alt="" />
+          <span>Games</span>
+        </div>
+
+
+        <div class="news s-opt">
+          <img src="./svg/news.svg" alt="" />
+          <span>News</span>
+        </div>
+
+
+        <div class="sports s-opt">
+          <img src="./svg/sports.svg" alt="" />
+          <span>Sports</span>
+        </div>
+
+
+        <div class="courses s-opt">
+          <img src="./svg/courses.svg" alt="" />
+          <span>Courses</span>
+        </div>
+
+
+        <div class="faishon s-opt">
+          <img src="./svg/faison.svg" alt="" />
+          <span>Fashion</span>
+        </div>
+
+
+        <div class="podcast s-opt">
+          <img src="./svg/podcast.svg" alt="" />
+          <span>Podcast</span>
+        </div>
+      </div>
+
+
+      <div class="fifth-img-bar">
+        <h3>More from Youtube</h3>
+        <div class="youtube1 s-opt">
+          <img src="./svg/ytimg.svg" alt="" />
+          <span>YouTube Premium</span>
+        </div>
+
+
+        <div class="youtube2 s-opt">
+          <img src="./svg/ms.svg" alt="" />
+          <span>YouTube Music</span>
+        </div>
+
+
+        <div class="youtube3 s-opt">
+          <img src="./svg/blackyt.svg" alt="" />
+          <span>YouTube Kids</span>
+        </div>
+      </div>
+
+
+      <div class="six-img-bar">
+        <div class="setting s-opt">
+          <img src="./svg/setting.svg" alt="" />
+          <span>Setting</span>
+        </div>
+
+
+        <div class="report s-opt">
+          <img src="./svg/flag.svg" alt="" />
+          <span>Report History</span>
+        </div>
+
+
+        <div class="help s-opt">
+          <img src="./svg/question.svg" alt="" />
+          <span>Help</span>
+        </div>
+
+
+        <div class="feedback s-opt">
+          <img src="./svg/feedback.svg" alt="" />
+          <span>Send Feedback</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="scroll-list">
+      <ul>
+        <li>All</li>
+        <li>Music</li>
+        <li>Web series</li>
+        <li>Podcasts</li>
+        <li>JavaScript</li>
+        <li>Dramedy</li>
+        <li>Mixes</li>
+        <li>Dubbing</li>
+        <li>Vocal lnaguage</li>
+        <li>Movie musicals</li>
+        <li>Storytelling</li>
+        <li>Study Skills</li>
+        <li>Java</li>
+        <li>Indian pop music</li>
+        <li>Live</li>
+        <li>information</li>
+        <li>Recently uploaded</li>
+        <li>Watched</li>
+        <li>New to you</li>
+      </ul>
+    </div>
+
+
+    <div class="main-content">
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (10).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.googleusercontent.com/iVLniuBur0FyMSnCWt6WD1zWHdOlgeCKW6_QBCcut6GhugbY2HM2SG6iT9ULU-PBk2hu-sfl7g=s160-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Samay Samjhayega Full Song | Tum Prem Ho Sad | MOhit lalwani |Surya Raj Kamal
+              </h4>
+            </div>
+            <div>
+              <span>ML Records</span><br>
+              <span>47M views • 2 years Ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (11).webp" alt=""/>
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/qDve5Fp20krPQOHVoCuHmQam9MRDnjPj9D53khjEQ3Fuo1URIi69kIqntUs5JjeUJBnz9BqIQw=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                LOVER (Full Movie) Guri - Ronak - Hindi Dubbed Movie - Movies 2023 - Geet MP3
+              </h4>
+            </div>
+            <div>
+              <span>Geet MP3</span><br>
+              <span>50M views • 1 years Ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (12).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/5ozNNrQBUJY8TPt2BYo6fEL-07ilkWHVedWCGFjtvuHU0aYrg1Iop-LJvprodA1_9-MTv7G_YA=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Mera Intkam Dekhegi | Shaadi Mein Zaroor Aana | Rajkummar R, Kriti K
+              </h4>
+            </div>
+            <div>
+              <span>Zee Music Company</span><br>
+              <span>294M views • 6 years Ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (13).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/37E2eTwWLo9bN9R0UNLJHMoiPVRaToO7n6MPndLJyjrOee6_oCF4N_JxkZSnm1OgLF88pMpk=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                How To Gain That Fluency | Speak English Fluently | Improve Your English
+              </h4>
+            </div>
+            <div>
+              <span>English Stories</span><br>
+              <span>269K views • 1 month ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (14).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIdro_lm26uR7XGBjYxjB-yBAdiC3iGwsN_6h7HdZrsOjkoXr3A=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Honest Worker | English Moral Animated Story | ‪@Animated_Stories‬
+              </h4>
+            </div>
+            <div>
+              <span>Animated Stories</span><br>
+              <span>2.6M views • 3 years ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (15).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/XE7Iq8jvJ07ptMc-HxZR_V-2XgXCb0i06i4E_dypl7xSR655WXaQeglfqNuEeuwH3oM9RKVodQ=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Baithe Baithe By Dikshant | Irshad Kamil, Pritam | Siddharth Ahuja | Songs 2023
+              </h4>
+            </div>
+            <div>
+              <span>T-Series</span><br>
+              <span>1.2M views • 1 years ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (16).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/PR2fmPkI9XHmo0Aj_WwP8YiTTTOjWpN18u7F4qW0MUfNtqJgbY148Djs3XjykdZafZ7hXk35Uw=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Instagram Challenge: Reach 100k Followers in Just 90 Days!
+              </h4>
+            </div>
+            <div>
+              <span>oNEX</span><br>
+              <span>106K views • 4 months ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (20).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/ytc/AIdro_m0rq-9f-XynuPa9-RUD3cAXBmnX4YHoIH1csqdmZHo3A=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                10 साल का लक्ष्य 10 महीने में पूरा होगा| A Buddhist Story On How To Achieve Goals Fast
+              </h4>
+            </div>
+            <div>
+              <span> We Inspired </span><br>
+              <span>540K views • 7 months ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (21).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/t4x9C_CB3EMnNMoLf_7lCsAGqXVbVbEGBCMch9NJRQ3G-ttwOJfZunNWIT6qzruuf8ZVEyKxtg=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                "Fittrat " Krystle D'Souza, Aditya Seal, Anushka Ranjan New Released Movie 2024
+              </h4>
+            </div>
+            <div>
+              <span>ALTT</span><br>
+              <span>700K views • 3 months ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (5).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/g-927IlIJ0ZEZ4aZs6U7P0VTN79G25er6UK3pHW5Xxh5pfADZxbs6fClIUrxdM4QpceFHX1e=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Nit Nit (Full Song) | Jasleen Royal | Punjabi Song | Ishtar Punjabi
+              </h4>
+            </div>
+            <div>
+              <span>Ishtar Punjabi</span><br>
+              <span>33M views • 4 years ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (6).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.googleusercontent.com/ytc/AIdro_lZEnCMQZz6FfEgDysuhVObO6O972OlqzBOaGwninMVpWk=s160-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                The Reunion | Original Series | Episode 1 | An Invite To The Past
+              </h4>
+            </div>
+            <div>
+              <span>The Zoom Studios</span><br>
+              <span>10M views • 6 years Ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+
+      <div class="gird-wraper">
+        <div class="row-1">
+          <img src="./image/hq720 (4).webp" alt="" />
+        </div>
+        <div class="row-2">
+          <div class="short-icon">
+            <img
+              src="https://yt3.ggpht.com/-C9LZe7bZqX6Py2jguQ8oHil6TQXIcJ2fvl_yQVYfknBkuLm0-EIXjNFOTGZltALue8lDhfLaA=s48-c-k-c0x00ffffff-no-rj"
+              alt="" />
+          </div>
+          <div class="channel-name">
+            <div>
+              <h4>
+                Level Up English Vocabulary (Stop Using Simple Words)
+              </h4>
+            </div>
+            <div>
+              <span>POC English </span><br>
+              <span>1.6M views • 1 month Ago</span>
+            </div>
+          </div>
+          <div class="three-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
